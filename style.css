@@ -1,0 +1,57 @@
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.todo-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  padding: 0;
+  font-size: 1rem;
+}
+.todo-wrapper li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightskyblue;
+  border: 2px dashed black;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 3px 6px 10px grey;
+  box-shadow: 3px 6px 10px grey;
+}
+.done {
+  text-decoration: line-through rgb(95, 95, 95);
+  color: grey;
+}
+
+.fa-plus-circle {
+  margin-left: 15px;
+  color: palegreen;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.fa-plus-circle:hover {
+  transform: rotate(180deg);
+}
+.far-checkmark {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-check-square {
+  color: green;
+}
+.fa-trash-alt {
+  position: absolute;
+  right: -35px;
+  color: tomato;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.fa-trash-alt:hover {
+  transform: skewX(-20deg);
+}
